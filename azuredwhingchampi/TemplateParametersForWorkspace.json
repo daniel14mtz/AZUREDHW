@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "azuredwhingchampi"
+		},
+		"LS_Serverless_password": {
+			"value": ""
+		},
+		"azuredwhingchampi-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:azuredwhingchampi.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"ExtLake_properties_typeProperties_url": {
+			"value": "https://azuredwhlakechampi.dfs.core.windows.net/"
+		},
+		"LS_Serverless_properties_typeProperties_server": {
+			"value": "azuredwhingchampi-ondemand.sql.azuresynapse.net"
+		},
+		"LS_Serverless_properties_typeProperties_database": {
+			"value": "SalesDWH"
+		},
+		"LS_Serverless_properties_typeProperties_userName": {
+			"value": "champi"
+		},
+		"azuredwhingchampi-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://datalakechampi.dfs.core.windows.net"
+		},
+		"ls_datalake_properties_typeProperties_url": {
+			"value": "https://azuredwhlakechampi.dfs.core.windows.net/"
+		}
+	}
+}
